@@ -1,7 +1,7 @@
 // Load your JSON data
 d3.json("https://raw.githubusercontent.com/bossbossleu/eb5/main/data/eb5_NY.json").then(function (originalData) {
   // Define margins
-  var margin = { top: 120, right: 300, bottom: 60, left: 270 }; // Adjust as needed
+  var margin = { top: 150, right: 300, bottom: 60, left: 270 }; // Adjust as needed
 
   // Define the dimensions for the parallel categories diagram
   var dimensions = ["r_name", "p_name", "developer_1", "arch_firm_1"];
@@ -18,7 +18,7 @@ d3.json("https://raw.githubusercontent.com/bossbossleu/eb5/main/data/eb5_NY.json
   });
 
   // Create the parallel categories diagram
-  var width = 1920, height = 1080; // Adjust as needed
+  var width = 1920, height = 1160; // Adjust as needed
 
   // Append an SVG element to the myDiv container
   var svg = d3.select("#myDiv").append("svg")
